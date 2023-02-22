@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Don't include fig files
+*.fig
+markdown-style.css
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

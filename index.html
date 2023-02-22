@@ -4,10 +4,217 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Chef Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/scss/style.scss" />
   </head>
   <body>
+    <header class="primary-header bg-neutral-900 margin-block-start-24">
+      <img class="logo mx-auto" src="./assets/logo.svg" alt="Chef Whoopie Pie" />
+      <nav class="primary-nav margin-block-start-24">
+        <ul class="flex-group mx-auto">
+          <li><a href="#about">About</a></li>
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero bg-neutral-900 clr-neutral-100 text-center">
+        <div class="container">
+          <h1 class="fs-900 ff-accent margin-block-end-48">Homecooked meals delivered straight to your door</h1>
+          <div class="flex-group mx-auto">
+            <button class="button" data-type="accent">Place order</button>
+            <a href="#about" class="button" data-type="outline">More Info</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <picture>
+                <source srcset="assets/about.avif" type="image/avif" />
+                <source srcset="assets/about.webp" type="image/webp" />
+                <img class="shift-up box-shadow-1" src="assets/about.jpg" alt="" />
+              </picture>
+            </div>
+            <div class="flow">
+              <header class="section-header">
+                <h2 class="fs-800 ff-accent clr-primary-500 margin-block-end-16">Come home to exciting cusine</h2>
+                <p class="fs-600 clr-neutral-400 uppercase">Made fresh with the best ingredients</p>
+              </header>
+              <p class="lead">Reward yourself after a long day</p>
+              <p>
+                With sumptuous cost effective meals preprepared to cook when you get home. Fast, tasty, and affordable meals to refresh your energy
+                and spirits.
+              </p>
+              <p>
+                It's said variety is the spice of life, we take that to heart, through our flexible menus and a-la-cart selections. Your reward? A
+                scrumptious entree and a mouth rewarding desert in just minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-neutral-200 text-center">
+        <div class="container">
+          <header class="section-header" data-decoration="true">
+            <h2 class="fs-800 ff-accent clr-primary-500">We make great food</h2>
+            <p class="fs-600 uppercase">Cooking is our passion, with quality and freshness being of the umost.</p>
+          </header>
+          <div class="grid-auto-fit">
+            <div>
+              <h3 class="fs-500 fw-bold clr-neutral-900">Fresh Ingredients</h3>
+              <p>Our meals reflect the quality of local farmer stands and butchers organic, natural, and fresh.</p>
+            </div>
+            <div>
+              <h3 class="fs-500 fw-bold clr-neutral-900">Professional Chef</h3>
+              <p>Our award winning, Chef John, has spent 20+ years learning, educating, surprising taste buds.</p>
+            </div>
+            <div>
+              <h3 class="fs-500 fw-bold clr-neutral-900">Ready for you</h3>
+              <p>In under 5 mins. Our easy to follow instructions guide you through preparing your meal for your enjoyment.</p>
+            </div>
+            <div>
+              <h3 class="fs-500 fw-bold clr-neutral-900">Made with love</h3>
+              <p>You're not a customer. You're family! Our family gets the highest quality ingredients and love in each meal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section clr-neutral-100 bg-neutral-900 text-center" id="meals">
+        <div class="container" data-type="wide">
+          <header class="section-header text-center" data-decoration="true">
+            <h2 class="fs-800">After a hard days work...</h2>
+            <p class="fs-600 uppercase">Savory meals inspire</p>
+          </header>
+          <div class="even-columns center-columns">
+            <!-- column 1 -->
+            <div>
+              <figure class="interactive-figure">
+                <picture>
+                  <source srcset="assets/meal-01.avif" type="image/avif" />
+                  <source srcset="assets/meal-01.webp" type="image/webp" />
+                  <img
+                    src="assets/meal-01.jpg"
+                    loading="lazy"
+                    alt="A nicely presented plate with a cooked peice of salmon on top of a bed of vegetables, with more vegetables on top of it"
+                  />
+                </picture>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fw-bold uppercase">About this meal</h3>
+                  <p>Floral and lightly acidic salsa brings out the buttery, rich flavors of grilled king salmon.</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- column 2 -->
+            <div>
+              <figure class="interactive-figure">
+                <picture>
+                  <source srcset="assets/meal-02.avif" type="image/avif" />
+                  <source srcset="assets/meal-02.webp" type="image/webp" />
+                  <img src="assets/meal-02.jpg" loading="lazy" alt="Several steak tacos on a table, along with several limes" />
+                </picture>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fw-bold uppercase">About this meal</h3>
+                  <p>These carne asada tacos served with freshly made pico de gallo and avocado salsa for the ultimate taco meal.</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- column 3 -->
+            <div>
+              <figure class="interactive-figure">
+                <picture>
+                  <source srcset="assets/meal-03.avif" type="image/avif" />
+                  <source srcset="assets/meal-03.webp" type="image/webp" />
+                  <img src="assets/meal-03.jpg" loading="lazy" alt="Clams being tossed in a pan" />
+                </picture>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fw-bold uppercase">About this meal</h3>
+                  <p>This classic dish, we created a unique cooking method, to bring out amazing flavors in your home.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <div class="container text-center" data-type="wide">
+          <header class="section-header">
+            <h2 class="fs-800 clr-primary-500 ff-accent">What our clients are saying about us</h2>
+          </header>
+
+          <div class="even-columns center-columns">
+            <!-- Testimonial 1 -->
+            <div class="card box-shadow-1" data-type="testimonial">
+              <picture>
+                <source srcset="assets/testimonial-01.avif" type="image/avif" />
+                <source srcset="assets/testimonial-01.webp" type="image/webp" />
+                <img src="assets/testimonial-01.jpg" alt="A man standing outside, smiling" />
+              </picture>
+
+              <div class="card__body">
+                <p>After Emperor Twit took over I worked long hours with little time inbetween. These amazing meals inspired me to make it fun!</p>
+              </div>
+              <div class="testimonial__footer padding-16 bg-neutral-200">
+                <p class="fs-500 clr-primary-500">Martin Hashtag</p>
+                <p>Janitor at Twitterville</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="card box-shadow-1" data-type="testimonial">
+              <picture>
+                <source srcset="assets/testimonial-02.avif" type="image/avif" />
+                <source srcset="assets/testimonial-02.webp" type="image/webp" />
+                <img src="assets/testimonial-02.jpg" alt="A woman standing outside using phone, smiling" />
+              </picture>
+
+              <div class="card__body">
+                <p>After my first meal I had to text everyone I knew to tell them about this amazing service.</p>
+              </div>
+              <div class="testimonial__footer padding-16 bg-neutral-200">
+                <p class="fs-500 clr-primary-500">Martha Mumbles</p>
+                <p>Market Analysis at Blabbermouth</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="card box-shadow-1" data-type="testimonial">
+              <picture>
+                <source srcset="assets/testimonial-03.avif" type="image/avif" />
+                <source srcset="assets/testimonial-03.webp" type="image/webp" />
+                <img src="assets/testimonial-03.jpg" alt="A woman eating a sandwich outside" />
+              </picture>
+
+              <div class="card__body">
+                <p>The food is so good and filling. The best part is for I can bring the leftovers to work for lunch. Amazing!</p>
+              </div>
+              <div class="testimonial__footer padding-16 bg-neutral-200">
+                <p class="fs-500 clr-primary-500">Mary P. Chews</p>
+                <p>Manager at Overworked</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="primary-footer section | bg-neutral-900 clr-neutral-100 text-center">
+      <div class="container flow">
+        <p class="fw-bold">Homecooked mealsdelivered straight to your door</p>
+        <p>©2022 Persronal Chef Services</p>
+        <p>555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234</p>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
